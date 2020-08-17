@@ -10,6 +10,7 @@ searchButton.addEventListener('click',function(){
 // this function will get the results which are coming from the api and it will create the results dynamically
 function getSearchResult(search){
     let parent = document.getElementById('parent');
+    parent.innerHTML = '';
     for(let i = 0; i<10 ;i++){
         // adding extra thing such as picture, album title
         let title = search.data[i].title;
